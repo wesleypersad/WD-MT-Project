@@ -1,0 +1,598 @@
+/* Global CSS */
+
+h1, h2  { 
+    font-family: 'Chewy', cursive;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+body, h3, h4, h5, p, a, input, button {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+/* Header CSS */
+.header-flex-container {
+    display:flex;
+    flex-direction:row;
+    background: #F7A036;
+    border:0px;
+    margin-bottom:0px;
+}
+
+.header-logo-container {
+    flex-grow:1;
+    text-align:center;
+}
+
+.header-logo {
+    max-width:120px;
+    min-width:100px;
+}
+
+.header-main-container {
+    flex-grow:11;
+    margin-top:15px;
+    background: #F7A036;
+    border:0px;
+}
+
+.header-tagline h1 {
+    margin:0px;
+    padding:0px;
+    display:inline;
+    color:#2E5266;
+    font-size:3em;
+}
+
+.header-tagline {
+    flex-grow:8;
+}
+
+.header-tagline h2 {
+    padding:0px;
+    margin:0px;
+    font-size:1.75em;
+    color:#2E5266;
+}
+
+.header-login-signup {
+    flex-grow:4;
+    text-align:right;
+    font-size:1.25em;
+    align-self: flex-end;
+    color:#2E5266;
+}
+
+.header-login-signup a {
+    text-decoration:none;
+    color:#2E5266;
+}
+
+.header-login-signup a img {
+    max-width:33px;
+    min-width:25px;
+}
+
+.header-nav-container {
+    font-size:1.5em;
+    line-height:3em;
+    background-color:#2CAB41;
+    color:#2E5266;
+}
+
+.header-nav-links {
+    flex-grow:6;
+    display:flex;
+    align-items:flex-start;
+    align-content:center;
+    background-color:#2CAB41;
+    margin-left:10%;
+}
+
+.header-nav-links a {
+    flex-grow:1;
+    color:#FFF;
+    text-decoration:none;
+    text-align:center;
+    background-color:#2CAB41;
+}
+
+.header-nav-links a:hover {
+    background-color:#F7EECF;
+    color:#000;
+}
+
+.header-search-div {
+    flex-grow:6;
+    text-align:right;
+    background-color:#2CAB41;
+}
+
+.header-search-input {
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: right;
+    width:250px;
+    height:30px;
+    margin-right:20px;
+    padding:2px;
+    border:none;
+    font-size:1em;
+}
+
+.header-breadcrumbs-container {
+    font-size:1.25em;
+    line-height:1.5em;
+    flex-grow:12;
+    padding:15px;
+    color:#000;
+    background-color:#FFF;
+}
+
+.header-breadcrumbs-container a {
+    text-decoration:none;
+    color:#000;
+}
+
+
+/* index.html CSS */
+/* By Leung Shiu Wo */
+
+
+#index-slides-container {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.index-slide {
+	width: 100vw;
+    height: auto;
+	float: left;
+	position: relative;
+}
+
+#index-slides-holder {
+	width: 300vw;
+	position: relative;
+	left: 0;
+	animation: scroller 20s backwards infinite;
+    animation-timing-function: linear;
+}
+
+/*slider animation*/
+@keyframes scroller {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  40% { transform: translateX(-100vw); }
+  70% { transform: translateX(-100vw); }
+  80% { transform: translateX(-200vw); }
+  100% { transform: translateX(-200vw); }
+}
+
+.index-map-container {
+    position: relative;
+}
+
+.index-overlay-text {
+    position: absolute;
+    padding: 30px;
+}
+
+
+.index-news-container {
+    background-color: #F7EECF;
+    width: 100vw;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.index-news article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-news img, .index-news-content {
+   flex: initial;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+
+.index-news h3 {
+    font-size: 1.75em;
+    color: #2E5266;
+}
+
+.index-news p {
+    padding-right: 15px;
+}
+
+#index-newsletter-signup {
+    background-color: #F7A036;
+    margin-left: 30px;
+    outline-style: solid;
+    outline-color: #2E5266;
+    outline-width: medium;
+    width: 45vw;
+}
+
+#index-newsletter-signup h3 {
+    font-size: 1.25em;
+    color:#2E5266;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+#index-newsletter-signup input, button {
+    font-size: 1em;
+    color:#2E5266;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+/* Start of About Page Style by Stéphanie Chan Moo Lun */
+
+/* About page: Universal Style */
+
+.about-history, .about-map, .about-restrictions, .about-accessibility {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about-separators {
+    display: grid;
+    width: center;
+    margin: 30px 200px;
+    padding-top: 7px;
+    grid-template: 60px/ 1fr 1fr 1fr;
+    border: 4px dotted #2E5266;
+    background-color: #F7A036;
+}
+
+.about-separator1, .about-separator2, .about-separator3, .about-separator4, .about-separator5, .about-separator6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: center;
+}
+
+/* About page: Banner Section */
+
+#about-banner-box {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#about-banner {
+    width: 300vw;
+	position: relative;
+	left: 0;
+    animation: about-scroller 14s linear 0s infinite;
+    animation-fill-mode: both;
+}
+
+.about-slides {
+    width: 100vw;
+    height: auto;
+	float: left;
+	position: relative;
+}
+
+@keyframes about-scroller{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200vw); }
+    0% { transform: translateX(0); }
+    30% { transform: translateX(0); }
+    40% { transform: translateX(-100vw); }
+    70% { transform: translateX(-100vw); }
+    80% { transform: translateX(-200vw); }
+    100% { transform: translateX(-200vw); }
+}
+
+/*About page: Location and Date */
+
+.about-location-date {
+    display: grid;
+    background-color: beige;
+    width: center;
+    margin: 0 auto;
+    margin: 10px 40px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    grid-template: 200px / 1fr 1fr;
+}
+
+
+/* About page: Location Section */
+
+.about-location {
+    background-color: beige;
+    width: 90%;
+    position:relative;
+    margin-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+.about-location h3 {
+    color:#2E5266;
+}
+
+
+/* About page: Date Section */
+
+.about-date {
+    display: inline-block;
+    background-color: beige;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+}
+
+.about-date table{
+    position: absolute;
+    right:60px; 
+}
+
+/* About page: Video Section */
+.about-banner-vid {
+    display: block;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About page: History Section */
+
+#about-image {
+    width: center;
+    padding: 40px 50px;
+    margin: 60px 40px 50px 40px;
+    position: relative;
+    background-image: url("../images/dinosaur-875614_1280.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    text-align: justify, center;
+    position: relative;
+    z-index: initial;
+}
+
+#about-image .about-history {
+    display: block;
+    line-height: 1.5;
+    width: center;
+    position: relative;
+    background-color: #f7eecf;
+    color: black;
+    opacity: 0.75;
+    font-size: 1.25em;
+    text-align: justify, center;
+    border: 4px dotted #F7A036;
+    padding: 70px 40px;  
+    margin: 40px auto;
+}
+
+.about-history h1{
+    color: #2E5266;
+    opacity: 1;
+}
+
+/*About page: Map Section*/
+
+.about-map {
+    display: block;
+    width: center;
+    margin: 40px 40px;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.about-map h1 {
+    color: #2E5266;
+}
+
+/*About page: Restrictions Section*/
+
+.about-restrictions {
+    display: block;
+    width: center;
+    margin: 40px 40px;
+    height: 500px;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.about-restrictions h1{
+    color: #2E5266;
+}
+
+
+/*About page: Accessibility Section*/
+
+.about-accessibility {
+    display: block;
+    width: center;
+    margin: 40px 40px;
+    height: 500px;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.about-accessibility {
+    color: #2E5266;
+}
+
+/*End of About Page Style by Stéphanie Chan Moo Lun */
+
+
+
+
+/* Footer CSS */
+.footerMain {
+    background-color:#000000;
+    padding-top:10px;
+    color:#FFFFFF;
+    font-family: 'ABeeZee', sans-serif;
+    font-size:12px;
+}
+
+.footerMain ul {
+    padding-top: 0px;
+    margin-top: 0px;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.footerMain a {
+    color:#FFFFFF;
+}
+
+.footerMain h3 {
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.footerMain h4 {
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.logoInverted {
+    text-align: center;
+}
+
+.footerTitle {
+    text-align: center;
+}
+
+.columns{
+    display: flex;
+}
+    
+.quickLinks {
+    flex: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.faqs {
+    flex: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contactUs {
+    flex: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.socialMedia {
+    flex: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.safetyNotice {
+    text-align: center;
+}
+
+.copyrightNotice {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* tickets.html CSS */
+
+#datepaymentSection {
+    padding: 20px;
+    border: 4px dotted #2E5266;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#packageTable {
+    table-layout: auto;
+    padding: 10px;
+    background-color: #F7EECF;
+    border: 4px dotted #2E5266;
+    text-align: left;
+    vertical-align: top;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#dateForm {
+    padding: 10px;
+    background-color: #F7EECF;
+    border: 4px dotted #2E5266;
+    width: 45%;
+    height: 275px;
+}
+
+#paymentForm {
+    padding: 10px;
+    background-color: #F7EECF;
+    border: 4px dotted #2E5266;
+    width: 45%;
+    float: right;
+}
+
+#checkout {
+    background-color: #F7A036;
+    border-radius: 15px;
+}
+
+#emptyBasket {
+    background-color: #F7A036;
+    border-radius: 15px;
+    float: right;
+}
+
+.addBasket {
+    background-color: #F7A036;
+    border-radius: 15px;
+}
+
+#offerTitle {
+    text-align: center;
+    color: red;
+}
+
+#slideshowTable th {
+    background-color: #2E5266;
+}
+
+#slideshowTable td {
+    padding: 20px;
+    border: 4px dotted #2E5266;
+    width: 20%;
+}
+
+#tandc {
+    text-align: center;
+}
+
+/* End of CSS added for Tickets page by Wesley Persad*/
